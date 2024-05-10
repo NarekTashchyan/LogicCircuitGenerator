@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boolean Equation Simplifier</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .logic-gate img {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      height: auto;
+    }
+    
+    .gate-container {
+      display: flex;
+    }
+    
+    .first-column,
+    .second-column,
+    .third-column,
+    .fourth-column {
+      flex: 1;
+      margin: 70px;
+    }
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+  }
+
+</style>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Logic Circuit Generator</h2>
+    <div class="form-group">
+        <label for="boolean-equation">Enter the boolean equation:</label>
+        <input type="text" class="form-control" id="boolean-equation" placeholder="Example: a|b|a">
+    </div>
+    <button class="btn btn-primary">Simplify</button>
+    <div id="result-message" class="mt-2"></div>
+    <svg id="svg-container" width="100%" height="100%"></svg>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./index.js" type="module"></script>
+</body>
+</html>
+
+
+
+
